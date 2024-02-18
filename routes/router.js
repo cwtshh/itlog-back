@@ -6,5 +6,6 @@ router.get("/", (req, res) => {
 })
 
 router.use("/admin", require("./admin_routes/admin_router.js"));
+router.use("/issue", require("./issues_routes/issues_routes.js"));
 
 module.exports = router;
